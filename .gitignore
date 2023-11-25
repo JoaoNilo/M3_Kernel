@@ -1,0 +1,5 @@
+# exclui Debug e Docs
+/Debug
+/Docs
+/Xternals
+Doxyfile
