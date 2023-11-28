@@ -30,7 +30,7 @@ uint32_t NMessagePipe::Dispatch(){
     uint32_t index, n=0L;
 
     //-----------------------------------------
-    while(filah->Counter() > 0L){
+    while(filah->Counter() > 0){
         filah->Get((uint8_t*)&Message);
         for(index=0L; index< objects_number; index++){
             BkMessage = Message;
@@ -45,7 +45,7 @@ uint32_t NMessagePipe::Dispatch(){
 
     //-----------------------------------------
 
-    while(fila->Counter()>0L){
+    while(fila->Counter()>0){
         fila->Get((uint8_t*)&Message);
         for(index=0L; index<objects_number; index++){
             BkMessage = Message;
